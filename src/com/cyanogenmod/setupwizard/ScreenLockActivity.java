@@ -31,7 +31,7 @@ public class ScreenLockActivity extends SubBaseActivity {
 
     @Override
     protected void onStartSubactivity() {
-        setNextAllowed(true);
+        setNextText(R.string.skip);
         findViewById(R.id.setup_lockscreen).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
