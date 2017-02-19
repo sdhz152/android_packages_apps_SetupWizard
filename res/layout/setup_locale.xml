@@ -15,21 +15,21 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/primary">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
 
     <include layout="@layout/header_condensed" />
 
-    <RelativeLayout android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:paddingLeft="@dimen/content_margin_left"
-                    android:paddingRight="@dimen/content_margin_left">
+    <RelativeLayout android:id="@+id/page"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:gravity="center"
+                 android:paddingLeft="@dimen/content_margin_left"
+                 android:paddingRight="@dimen/content_margin_left"
+                 style="@style/PageContent">
 
         <com.cyanogenmod.setupwizard.ui.LocalePicker
             android:id="@+id/locale_list"
@@ -41,10 +41,4 @@
             android:layout_centerHorizontal="true"/>
 
     </RelativeLayout>
-
-
-    <fragment android:name="com.android.setupwizard.navigationbar.SetupWizardNavBar"
-              android:id="@+id/navigation_bar"
-              style="@style/setup_wizard_navbar_style" />
-
 </LinearLayout>
