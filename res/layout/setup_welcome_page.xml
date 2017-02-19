@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2015 The CyanogenMod Project
+     Copyright (C) 2013 The CyanogenMod Project
      Copyright (C) 2017 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,22 +18,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:background="@color/primary">
 
-    <include layout="@layout/header_condensed" />
+    <Space android:layout_width="match_parent"
+           android:layout_height="0px"
+           android:layout_weight="1"/>
 
-    <ProgressBar
-        android:id="@+id/progressBar1"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:indeterminateOnly="true"
+    <ImageView
+        android:id="@+id/brand_logo"
         android:layout_width="match_parent"
-        android:layout_height="8dp"
-        android:paddingStart="0dp"
-        android:paddingEnd="0dp" />
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:padding="@dimen/content_margin_left"/>
 
-    <FrameLayout android:id="@+id/page"
-                 android:layout_width="match_parent"
-                 android:layout_height="0dp"
-                 android:layout_weight="1"
-                 style="@style/PageContent"/>
+    <Space android:layout_width="match_parent"
+           android:layout_height="0px"
+           android:layout_weight="1"/>
+
 </LinearLayout>

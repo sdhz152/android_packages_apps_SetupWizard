@@ -77,8 +77,5 @@
     <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="oem_post_setup">
         <result wizard:action="exit" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.EXIT;end" id="exit">
-        <result wizard:action="cm_exit" />
-    </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.EXIT;end" id="cm_exit" />
+    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.EXIT;end" id="exit" />
 </WizardScript>
